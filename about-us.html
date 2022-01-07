@@ -1,0 +1,114 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Charlotte Cleaner's</title>
+    <link rel="stylesheet" type="text/css" href="contact-us-form.css">
+    <link rel="stylesheet" type="text/css" href="assignment%202.css"> <!--importing css ;-->
+    <script src = "https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src = "https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+
+    <script>
+        $( function() {
+            $( "#datepicker" ).datepicker();
+        } );
+    </script>
+
+
+    <link href = "https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css"
+          rel = "stylesheet">
+
+</head>
+
+<body>
+<header> <!-- beginning of header -->
+    <div class="logo"> <!-- display logo -->
+        <img src="logo.png" alt="logo">
+    </div>
+
+</header><!-- end of header -->
+<div>
+    <div class="options">   <!-- menu options -->
+        <a href ="index.html">Home</a>
+        <a href="pricing.html">Services</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="about-us.html">About Us</a>
+    </div>
+    <div class="container"> <!-- displaying main picture -->
+        <img src="home.jpeg" alt = "home" style="width:100%;">
+
+    </div>
+    <h1> <!-- About Us Content - STILL IN PROGRESS -->
+        Providing You Best Service -- Since 1998
+    </h1>
+
+    <p>
+        We at Charlotte Cleaners have pledged to give all the customers clean, good smelling, and feel good clothes.
+        We are a locally own business and this is our only one store serving customers from 24 years.
+        We take care of every kinds of clothes from business dress shirts laundering to wedding gowns.
+        We also do clothing alterations and clothing repairs, our expertise on tailoring will help you dress the best fit.
+
+    </p>
+</div>
+<h3>Contact Form</h3>
+
+<div class="container1">
+    <form id = "myform" >
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+        <label for = "field"> Email</label> <br><br>
+        <input class="left" id="field" name="field" placeholder="Jason.kent@gmail.com"><br><br>
+        <label for="country">Country</label>
+        <select id="country" name="country">
+            <option value="usa">USA</option>
+            <option value="canada">Canada</option>
+
+        </select>
+
+        <label for="subject">Subject</label>
+        <textarea id="subject" name="subject" placeholder="Description......" style="height:200px"></textarea>
+       <label for="datepicker">Date: </label>
+        <input type="text" id="datepicker" name="datepicker">
+
+        <input type="submit" value="Submit">
+
+    </form>
+
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+<script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script>
+
+<script>
+    // just for the demos, avoids form submit
+    jQuery.validator.setDefaults({
+        debug: true,
+        success: "valid"
+    });
+    $( "#myform" ).validate({
+        rules: {
+            field: {
+                required: true,
+                email: true
+            }
+        }
+    });
+</script>
+
+<footer> <!-- beginning of footer -->
+
+    <p>
+        Opened 7AM - 8PM all year round<br>
+        Charlotte Cleaner's<br>
+        5300 Tryon St. <br>
+        Charlotte, NC - 28213 <br>
+        Jason.kent@gmail.com
+    </p>
+
+</footer> <!-- end of footer -->
+</body> <!-- end of body -->
+</html>  <!-- end of html -->

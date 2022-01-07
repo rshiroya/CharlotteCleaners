@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Charlotte Cleaner's</title>
+    <link rel="stylesheet" href="jquery-ui-1.12.1.custom/jquery-ui.min.css"> <!-- importing css -->
+    <link rel="stylesheet" type="text/css" href="assignment%202.css">
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+
+</head>
+
+<body>
+<header> <!-- beginning of header -->
+    <div class="logo"> <!-- display logo -->
+        <img src="logo.png" alt="logo">
+    </div>
+
+</header> <!-- end of header -->
+<main>
+    <div class="options"> <!-- menu options -->  
+        <a href ="index.html">Home</a>
+        <a href="pricing.html">Services</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="about-us.html">About Us</a>
+    </div>
+
+    <div class="container"> <!-- displaying main picture -->
+        <img src="home.jpeg" alt = "home" style="width:100%;">
+    </div>
+
+    <div>
+        <p>
+            <!-- Pricing of the laundromat. Prices of dry cleaning-->
+            <b>Laundry: </b><br><br>
+            Price for Washer:- $2 per load <br>
+            Price for Dryer:- 25 cents per 5 minutes<br><br>
+        </p>
+    </div>
+    <div id = button>
+        <p id = "page-title"><b>Dry Clean: </b></p>
+            <button id="load-data">Click here to view Dry Cleaning prices</button>
+    </div>
+        
+</main>
+<script>
+    document.getElementById("load-data").addEventListener("click",function(){
+        var xmlhttp = new XMLHttpRequest();
+        xmlhttp.open("GET", "data.txt");
+        xmlhttp.onreadystatechange = function() {
+            document.getElementById("page-title").innerHTML = this.responseText;
+        };
+        xmlhttp.send();
+    });
+</script>
+<footer> <!-- beginning of footer -->
+
+    <p>
+        Opened 7AM - 8PM all year round<br>
+        Charlotte Cleaner's<br>
+        5300 Tryon St. <br>
+        Charlotte, NC - 28213 <br>
+        Jason.kent@gmail.com
+    </p>
+
+</footer> <!-- end of footer -->
+</body> <!-- end of body -->
+</html>  <!-- end of html -->

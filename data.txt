@@ -1,0 +1,14 @@
+     <p>
+            <b>Dry Cleaning: </b><br><br>
+                T-shirts:- $1.50 <br>
+                Shorts:- $2.00 <br>
+                Jacket:- $5 <br>
+                Sweaters:- $5 <br>
+                Hoodies :- $3.50 <br>
+                Denim: <br>
+                $2.00 - Light Starch <br> $2.50 - Medium Starch <br> $3.00 - Heavy Starch <br>
+                Dress Shirt: <br> $1.50 - Light Starch <br> $2.00 - Medium Starch <br> $2.50 - Heavy Starch <br>
+                Trousers:- $2.50 <br>
+                Suit: <br> Coat:- $7.50 <br> 2 pcs:- $10 <br>
+                3pcs:- $15 <br>
+        </p>
